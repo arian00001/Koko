@@ -65,3 +65,11 @@ To launch a real store: replace the illustrative catalogue with verified product
 JavaScript syntax, catalogue/asset consistency, local resource references, section anchors, unique IDs, and motion-engine runtime checks were run. Revision 6 was also checked in a browser at desktop (1578 × 923) and phone (375 × 812) widths: hero ribbon, denim and tailoring edits, going-out campaign with confetti, the denim drape rising and lifting away, shop filters and product details. Real touch gestures remain unverified.
 
 Reference motion timings are estimates from a camera recording of a display. Scroll animation is linked to visitor progress, so real duration depends on scroll speed. Exact original easing, hover behaviors and off-screen interactions cannot be recovered from the recording alone.
+
+
+## Deployment
+
+- **Netlify:** publish directory is already configured as `dist` in `netlify.toml`.
+- **Vercel:** `vercel.json` rewrites requests to `dist/`, so deploying the repository root will not produce the previous root 404.
+- The project ZIP intentionally contains code only; the referenced photographs/fonts must be present in `dist/assets/` before deployment for all visuals to load.
+- The header now includes a `PORTFOLIO ↗` button linking to `https://arian00001.site`.
